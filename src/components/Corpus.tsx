@@ -4,6 +4,7 @@ import type { Block } from "~/types/game";
 import { getBlockById } from "~/data/blocks";
 import { CorpusBlock } from "./CorpusBlock";
 import DecisionBlock from "./DecisionBlock";
+import Image from "next/image";
 
 export const Corpus = () => {
   const [blocks, setBlocks] = useState<Block[]>([]);
@@ -98,12 +99,22 @@ export const Corpus = () => {
         </div>
       ) : (
         <div className="relative mx-auto w-[615px]">
-          <div className="h-[120px]" />
+          <div className="h-[100px]" />
           <div>
             {blocks.map((block, idx) => (
               <div key={block.id}>
                 <CorpusBlock block={block} />
-                {idx !== blocks.length - 1 && <div className="h-[60px]" />}
+                {idx !== blocks.length - 1 && (
+                  <div className="flex h-[100px] items-center justify-center">
+                    <Image
+                      src="/images/arrow.svg"
+                      alt="Arrow icon"
+                      width={80}
+                      height={80}
+                      className="h-[40px] w-[40px]"
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>
