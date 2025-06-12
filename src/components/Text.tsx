@@ -6,5 +6,5 @@ interface TextProps {
 }
 
 export function Text({ children, className = "" }: TextProps) {
-  return <span className={`font-inter ${className}`}>{children}</span>;
+  return <span className={`font-sans ${className}`}>{children}</span>;
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Text } from "~/components/Text";
+import { DesktopView } from "~/components/DesktopView";
 
 export default function HomePage() {
   const [isTooSmall, setIsTooSmall] = useState(false);
@@ -23,12 +24,14 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white">
-      {isTooSmall && (
+      {isTooSmall ? (
         <div className="fixed inset-0 flex items-center justify-center">
-          <Text className="text-center text-lg font-medium">
+          <Text className="text-center text-lg font-bold">
             View on desktop or larger screen.
           </Text>
         </div>
+      ) : (
+        <DesktopView />
       )}
     </main>
   );
