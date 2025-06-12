@@ -15,6 +15,26 @@ export const Corpus = () => {
     }
   }, []);
 
+  // After any update to blocks (except the first render), smoothly scroll to the bottom of the page
+  useEffect(() => {
+    if (blocks.length > 1) {
+      // Use next tick to ensure DOM has rendered new content
+      const id = requestAnimationFrame(() => {
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: "smooth",
+        });
+      });
+
+      return () => cancelAnimationFrame(id);
+    }
+  }, [blocks]);
+
+  // When a user selects a decision, append the corresponding block to the corpus path
+  const handleDecisionSelect = (block: Block) => {
+    setBlocks((prev) => [...prev, block]);
+  };
+
   const renderDecisionBlocks = () => {
     if (blocks.length === 0) return null;
 
@@ -31,7 +51,14 @@ export const Corpus = () => {
           if (!childBlock) return null;
           // If there is only one decision, pass opt = -1 so the child can handle single-option state.
           const optValue = pointerCount === 1 ? -1 : idx;
-          return <DecisionBlock key={id} block={childBlock} opt={optValue} />;
+          return (
+            <DecisionBlock
+              key={id}
+              block={childBlock}
+              opt={optValue}
+              onSelect={handleDecisionSelect}
+            />
+          );
         })}
       </div>
     );
@@ -46,10 +73,13 @@ export const Corpus = () => {
       ) : (
         <div className="relative mx-auto w-[615px]">
           <div className="h-[120px]" />
-          <div className="">
-            <CorpusBlock block={blocks[0]!} />
-            {/* <div className="h-[48px]" />
-            <CorpusBlock block={blocks[0]!} /> */}
+          <div>
+            {blocks.map((block, idx) => (
+              <div key={block.id}>
+                <CorpusBlock block={block} />
+                {idx !== blocks.length - 1 && <div className="h-[48px]" />}
+              </div>
+            ))}
           </div>
           <div className="h-[48px]" />
           {renderDecisionBlocks()}

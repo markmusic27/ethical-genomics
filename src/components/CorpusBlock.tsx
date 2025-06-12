@@ -1,13 +1,26 @@
 import type { Block } from "~/types/game";
 import { Text } from "./Text";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const CorpusBlock = ({ block }: { block: Block }) => {
   const [showContext, setShowContext] = useState(false);
 
+  // Local state to trigger mount animation
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // Delay ensures the transition is picked up by the browser
+    const t = setTimeout(() => setVisible(true), 10);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
-    <div className="flex flex-col">
+    <div
+      className={`flex transform flex-col transition-all duration-500 ease-out ${
+        visible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+      }`}
+    >
       <div className="mb-[12px] flex flex-row items-center gap-[24px]">
         <Text className="text-[16px] font-[400] text-[#171717]">
           {block.title}

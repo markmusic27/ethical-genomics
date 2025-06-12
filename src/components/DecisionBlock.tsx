@@ -1,9 +1,24 @@
 import type { Block } from "~/types/game";
 import { Text } from "./Text";
 
-const DecisionBlock = ({ block, opt }: { block: Block; opt: number }) => {
+const DecisionBlock = ({
+  block,
+  opt,
+  onSelect,
+}: {
+  block: Block;
+  opt: number;
+  onSelect?: (block: Block) => void;
+}) => {
+  const handleClick = () => {
+    if (onSelect) {
+      onSelect(block);
+    }
+  };
+
   return (
     <div
+      onClick={handleClick}
       className="transition:scale flex h-[350px] w-full cursor-pointer flex-col rounded-[6px] bg-cover bg-center p-[12px] duration-200 hover:scale-101"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 10%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 90%), url('/game/${block.id}.png')`,
