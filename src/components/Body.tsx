@@ -6,7 +6,7 @@ export const Body = () => {
   return (
     <div className="relative mx-auto w-[600px]">
       <div className="h-[128px]" />
-      <Text className="text-left text-[20px] font-[400] text-[#000000]">
+      <Text className="text-left text-[20px] font-[400] text-[#171717]">
         Ethics in Psychiatric Genomics Funding in Latin America
       </Text>
       <div className="h-[4px]" />
