@@ -45,10 +45,15 @@ export const Corpus = () => {
         </div>
       ) : (
         <div className="relative mx-auto w-[615px]">
-          <div className="h-[100px]" />
-          <CorpusBlock block={blocks[0]!} />
+          <div className="h-[120px]" />
+          <div className="">
+            <CorpusBlock block={blocks[0]!} />
+            {/* <div className="h-[48px]" />
+            <CorpusBlock block={blocks[0]!} /> */}
+          </div>
           <div className="h-[48px]" />
           {renderDecisionBlocks()}
+          <div className="h-[100px]" />
         </div>
       )}
     </div>
