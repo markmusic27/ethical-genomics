@@ -34,8 +34,7 @@ export const Sidebar = () => {
       <SidebarItem
         text="Gameplay"
         onClick={() => {
-          // Add your click handler here
-          console.log("Reflection clicked");
+          window.location.href = "/gameplay";
         }}
       />
     </div>

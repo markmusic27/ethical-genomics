@@ -1,7 +1,7 @@
 import "~/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Crimson_Text, Inter } from "next/font/google";
+import { Crimson_Pro, Crimson_Text, Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "College 117 Final",
@@ -14,8 +14,8 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const crimson = Crimson_Text({
-  weight: ["400", "600", "700"],
+const crimson = Crimson_Pro({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-crimson",
 });

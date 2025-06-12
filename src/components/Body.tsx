@@ -29,7 +29,7 @@ export const Body = () => {
         <Button
           text="Start Gameplay"
           onClick={() => {
-            console.log("Starting gameplay");
+            window.location.href = "/gameplay";
           }}
         />
       </div>

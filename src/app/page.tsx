@@ -9,7 +9,7 @@ export default function HomePage() {
 
   useEffect(() => {
     const checkWidth = () => {
-      setIsTooSmall(window.innerWidth < 750);
+      setIsTooSmall(window.innerWidth < 1000);
     };
 
     // Check on mount
@@ -26,7 +26,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-white">
       {isTooSmall ? (
         <div className="fixed inset-0 flex items-center justify-center">
-          <Text className="text-center text-lg font-bold">
+          <Text className="text-center text-lg font-[400]">
             View on desktop or larger screen.
           </Text>
         </div>
