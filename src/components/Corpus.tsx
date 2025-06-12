@@ -7,6 +7,10 @@ import DecisionBlock from "./DecisionBlock";
 
 export const Corpus = () => {
   const [blocks, setBlocks] = useState<Block[]>([]);
+  // Controls fade-out animation for decision blocks
+  const [isAnimating, setIsAnimating] = useState(false);
+  // Temporarily stores the block selected while the animation plays
+  const [pendingBlock, setPendingBlock] = useState<Block | null>(null);
 
   useEffect(() => {
     const initialBlock = getBlockById(0);
@@ -30,10 +34,26 @@ export const Corpus = () => {
     }
   }, [blocks]);
 
-  // When a user selects a decision, append the corresponding block to the corpus path
+  // When a user selects a decision, play a fade-out animation before
+  // appending the selected block to the corpus path.
   const handleDecisionSelect = (block: Block) => {
-    setBlocks((prev) => [...prev, block]);
+    // Trigger fade-out and stash the chosen block
+    setIsAnimating(true);
+    setPendingBlock(block);
   };
+
+  // After the fade-out animation completes, append the chosen block
+  useEffect(() => {
+    if (isAnimating && pendingBlock) {
+      const timeout = setTimeout(() => {
+        setBlocks((prev) => [...prev, pendingBlock]);
+        setIsAnimating(false);
+        setPendingBlock(null);
+      }, 300); // Keep this duration in sync with the CSS transition below
+
+      return () => clearTimeout(timeout);
+    }
+  }, [isAnimating, pendingBlock]);
 
   const renderDecisionBlocks = () => {
     if (blocks.length === 0) return null;
@@ -44,8 +64,14 @@ export const Corpus = () => {
 
     const pointerCount = currentBlock.pointers.length;
 
+    const containerClass = `flex flex-row gap-[12px] transition-all duration-500 ${
+      isAnimating
+        ? "opacity-0 translate-y-4 pointer-events-none"
+        : "opacity-100 translate-y-0"
+    }`;
+
     return (
-      <div className="flex flex-row gap-[12px]">
+      <div className={containerClass}>
         {currentBlock.pointers.map((id, idx) => {
           const childBlock = getBlockById(id);
           if (!childBlock) return null;
@@ -77,13 +103,13 @@ export const Corpus = () => {
             {blocks.map((block, idx) => (
               <div key={block.id}>
                 <CorpusBlock block={block} />
-                {idx !== blocks.length - 1 && <div className="h-[48px]" />}
+                {idx !== blocks.length - 1 && <div className="h-[60px]" />}
               </div>
             ))}
           </div>
-          <div className="h-[48px]" />
+          <div className="h-[60px]" />
           {renderDecisionBlocks()}
-          <div className="h-[100px]" />
+          <div className="h-[150px]" />
         </div>
       )}
     </div>
