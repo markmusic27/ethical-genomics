@@ -3,7 +3,7 @@ import { type Block } from "~/types/game";
 export const blocks: Block[] = [
   {
     id: 0,
-    action_text: "",
+    action_text: "Take the pill",
     title: "A Dose of Uncertainty",
     question:
       "Should she trust the system and take the medication, or wait and seek alternatives, risking her mental health in the meantime?",
@@ -15,7 +15,7 @@ export const blocks: Block[] = [
   },
   {
     id: 1,
-    action_text: "",
+    action_text: "Take the pill",
     title: "A Dose of Uncertainty",
     question:
       "Should she trust the system and take the medication, or wait and seek alternatives, risking her mental health in the meantime?",
@@ -27,7 +27,7 @@ export const blocks: Block[] = [
   },
   {
     id: 2,
-    action_text: "",
+    action_text: "Go to hospital",
     title: "A Dose of Uncertainty",
     question:
       "Should she trust the system and take the medication, or wait and seek alternatives, risking her mental health in the meantime?",
