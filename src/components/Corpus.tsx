@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Text } from "./Text";
 import type { Block } from "~/types/game";
-import { blocks, getBlockById } from "~/data/blocks";
+import { getBlockById } from "~/data/blocks";
 import { CorpusBlock } from "./CorpusBlock";
 import DecisionBlock from "./DecisionBlock";
 
@@ -15,6 +15,28 @@ export const Corpus = () => {
     }
   }, []);
 
+  const renderDecisionBlocks = () => {
+    if (blocks.length === 0) return null;
+
+    // Get the most recent block in the path
+    const currentBlock = blocks[blocks.length - 1];
+    if (!currentBlock || currentBlock.pointers.length === 0) return null;
+
+    const pointerCount = currentBlock.pointers.length;
+
+    return (
+      <div className="flex flex-row gap-[12px]">
+        {currentBlock.pointers.map((id, idx) => {
+          const childBlock = getBlockById(id);
+          if (!childBlock) return null;
+          // If there is only one decision, pass opt = -1 so the child can handle single-option state.
+          const optValue = pointerCount === 1 ? -1 : idx;
+          return <DecisionBlock key={id} block={childBlock} opt={optValue} />;
+        })}
+      </div>
+    );
+  };
+
   return (
     <div>
       {blocks.length <= 0 ? (
@@ -26,10 +48,7 @@ export const Corpus = () => {
           <div className="h-[100px]" />
           <CorpusBlock block={blocks[0]!} />
           <div className="h-[48px]" />
-          <div className="flex flex-row gap-[12px]">
-            <DecisionBlock block={blocks[0]!} opt={0} />
-            <DecisionBlock block={blocks[0]!} opt={1} />
-          </div>
+          {renderDecisionBlocks()}
         </div>
       )}
     </div>
