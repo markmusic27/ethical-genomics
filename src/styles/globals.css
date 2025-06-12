@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+  /* Default font family: Inter (defined via the `--font-inter` CSS variable coming
+     from `next/font/google` in `src/app/layout.tsx`) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-serif: var(--font-crimson), ui-serif, serif;
 }
