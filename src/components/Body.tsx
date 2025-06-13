@@ -19,6 +19,7 @@ export const Body = () => {
           className="h-full w-full object-cover"
           controls
           playsInline
+          poster="/images/thumbnail.png"
           src="/video/tutorial.mp4"
         >
           Your browser does not support the video tag.
