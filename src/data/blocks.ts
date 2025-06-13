@@ -78,7 +78,7 @@ export const blocks: Block[] = [
       "You decide to build a new genomic dataset tailored to your local population. It’s a long and expensive road, and your first challenge is assembling a multidisciplinary team. You hire geneticists, data scientists, community liaisons, and ethicists from across Brazil to ensure the research reflects both scientific and social realities. Progress is slow, but trust grows. Early pilot studies show promise, and you’re setting the groundwork for more equitable psychiatric care. This is the right foundation—but the hard part is just beginning.",
     question:
       "Should you focus on securing local funding, or pursue global grants from institutions like the WHO?",
-    pointers: [],
+    pointers: [9, 10],
     context: "",
   },
   {
@@ -99,8 +99,50 @@ export const blocks: Block[] = [
       "You commit to developing a genomic dataset specific to Mexico, centered in Nuevo León. You assemble a diverse, local team—geneticists, clinicians, community liaisons, and data scientists—ensuring cultural and scientific integrity. The work is slow and funding is tight, but your community engagement grows stronger by the day. Initial pilot data is promising. You've laid the foundation for more precise, inclusive care. Now comes the challenge of securing funding to sustain the effort.",
     question:
       "Should you focus on securing local funding, or pursue global grants from institutions like the WHO?",
-    pointers: [],
+    pointers: [11, 12],
     context: "",
+  },
+  {
+    id: 9,
+    action_text: "Pursue local funding",
+    title: "Red Tape and Roadblocks",
+    description:
+      "Congrats, you got funds!... for 2 years. After that, the government—facing economic strain—reallocates your entire budget to cover emergency healthcare costs. Local institutions are supportive in theory, but bureaucratic delays, shifting political agendas, and inconsistent disbursements derail your progress. Your research stalls just as recruitment gains momentum. Trust with your team and community frays as uncertainty grows.",
+    question: "Backtrack to last decision and try the other option",
+    pointers: [6],
+    context: "",
+  },
+  {
+    id: 10,
+    action_text: "Apply for WHO funding",
+    title: "A Global Lifeline",
+    description:
+      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of an initiative to support inclusive mental health research in underserved regions. Through this, you gain access to an international network of experts, infrastructure support, and long-term visibility. Your project becomes a model for cross-border genomic collaboration, and local credibility grows as international legitimacy takes hold. Now, it’s time to scale. A key decision lies ahead: will you slowly involve the community, building trust and even hiring early study participants to co-lead the work, or will you bring in high-profile researchers from elite U.S. institutions to fast-track progress—risking community exclusion in the process? You’re now choosing between appointing a less experienced but community-rooted Brazilian investigator, or a highly credentialed PI from Boston.",
+    question:
+      "Who should lead the research: the Brazilian early-career investigator or the Boston expert?",
+    pointers: [],
+    context: "TODO: fill out",
+  },
+  {
+    id: 11,
+    action_text: "Pursue local funding",
+    title: "Red Tape and Roadblocks",
+    description:
+      "Congrats, you got funds!... for 2 years. After that, the government—citing budget pressures—redirects your entire grant to cover gaps in the national healthcare system. While your intentions were good, local institutions proved slow and unpredictable, burdened by bureaucratic delays, shifting health priorities, and inconsistent oversight. Just as your team was gaining traction, the momentum is lost. The community feels let down, and your work hangs in limbo.",
+    question: "Backtrack to last decision and try the other option",
+    pointers: [8],
+    context: "",
+  },
+  {
+    id: 12,
+    action_text: "Apply for WHO funding",
+    title: "A Global Lifeline",
+    description:
+      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of a global push to strengthen mental health research in underrepresented regions. With it, you gain access to global partners, technical support, and a sustainable funding structure. Your project in Nuevo León becomes a regional model for ethical, collaborative psychiatric genomics. But the next step is just as critical: will you center the voices of those affected? You now face a key choice—move slowly to build trust by hiring and elevating someone from the local community, or bring in an experienced PI from Boston to lead and accelerate results? You’re now choosing between appointing a less experienced but community-rooted Mexican investigator, or a highly credentialed PI from Boston.",
+    question:
+      "Who should lead the research: the Mexican early-career investigator or the Boston expert?",
+    pointers: [],
+    context: "TODO: fill out",
   },
 ];
 
