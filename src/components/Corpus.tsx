@@ -137,9 +137,9 @@ export const Corpus = () => {
               </div>
             ))}
           </div>
-          <div className="h-[60px]" />
+          <div className="h-[40px]" />
           {renderDecisionBlocks()}
-          <div className="h-[150px]" />
+          <div className="h-[100px]" />
         </div>
       )}
     </div>
