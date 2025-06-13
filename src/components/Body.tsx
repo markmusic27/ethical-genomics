@@ -42,11 +42,13 @@ export const Body = () => {
       <Content
         header="Reflection"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        data-section="reflection"
       />
       <div className="h-[48px]" />
       <Content
         header="Annotated Bibliography"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        data-section="bibliography"
       />
       <div className="h-[256px]" />
     </div>

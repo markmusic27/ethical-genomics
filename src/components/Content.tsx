@@ -1,8 +1,18 @@
 import { Text } from "./Text";
 
-export const Content = ({ header, body }: { header: string; body: string }) => {
+interface ContentProps {
+  header: string;
+  body: string;
+  "data-section"?: string;
+}
+
+export const Content = ({
+  header,
+  body,
+  "data-section": dataSection,
+}: ContentProps) => {
   return (
-    <div className="flex flex-col gap-[24px]">
+    <div data-section={dataSection} className="flex flex-col gap-[24px]">
       <Text className="text-[16px] font-[400] text-[#171717]">{header}</Text>
       <Text
         isSerif

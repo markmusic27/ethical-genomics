@@ -11,7 +11,7 @@ export const SidebarItem = ({ text, onClick }: SidebarItemProps) => {
       className="w-full cursor-pointer pb-[4px] text-right"
       onClick={onClick}
     >
-      <Text className="text-[16px] text-[#A8A29E] transition-colors duration-200 hover:text-[#000000]">
+      <Text className="text-[16px] text-[#A8A29E] transition-colors duration-200 hover:text-[#6B6968]">
         {text}
       </Text>
     </button>

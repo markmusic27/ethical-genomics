@@ -6,6 +6,24 @@ import { CorpusBlock } from "./CorpusBlock";
 import DecisionBlock from "./DecisionBlock";
 import Image from "next/image";
 
+// Add CSS animation styles
+const arrowAnimation = `
+@keyframes arrowFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.arrow-animate {
+  animation: arrowFadeIn 0.5s ease-out forwards;
+}
+`;
+
 export const Corpus = () => {
   const [blocks, setBlocks] = useState<Block[]>([]);
   // Controls fade-out animation for decision blocks
@@ -106,12 +124,13 @@ export const Corpus = () => {
                 <CorpusBlock block={block} />
                 {idx !== blocks.length - 1 && (
                   <div className="flex h-[100px] items-center justify-center">
+                    <style>{arrowAnimation}</style>
                     <Image
                       src="/images/arrow.svg"
                       alt="Arrow icon"
                       width={80}
                       height={80}
-                      className="h-[40px] w-[40px]"
+                      className="arrow-animate h-[40px] w-[40px]"
                     />
                   </div>
                 )}
