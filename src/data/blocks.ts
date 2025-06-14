@@ -22,7 +22,7 @@ export const blocks: Block[] = [
       "How will you prioritize your first steps in launching the working group?",
     pointers: [3],
     context:
-      "These are actual working groups that partner with the Latin American Genomics Consortium. Check their work out at: https://www.latinamericangenomicsconsortium.org/autism-spectrum-disorder-working-group",
+      "These are actual working groups that partner with the Latin American Genomics Consortium (Fu et al., 2022). Check their work out at: https://www.latinamericangenomicsconsortium.org/autism-spectrum-disorder-working-group",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const blocks: Block[] = [
       "What will your team focus on first to lay a strong foundation for the project?",
     pointers: [4],
     context:
-      "TODO: Cite these These are actual working groups that partner with the Latin American Genomics Consortium. Check their work out at: https://www.latinamericangenomicsconsortium.org/bipolar-disorder-working-group",
+      "These are actual working groups that partner with the Latin American Genomics Consortium (O'Connell et al., 2025). Check their work out at: https://www.latinamericangenomicsconsortium.org/bipolar-disorder-working-group",
   },
   {
     id: 3,
@@ -79,7 +79,8 @@ export const blocks: Block[] = [
     question:
       "Should you focus on securing local funding, or pursue global grants from institutions like the WHO?",
     pointers: [9, 10],
-    context: "TODO: Fill out and cite",
+    context:
+      "Local evidence shows that Latin American governments devote under 2 % of total health spending to psychiatric services, a shortfall rooted in stark regional wealth gaps, cultural stigma, and limited political will (CITE). Such precarious funding keeps mental-health systems below the “sufficiency threshold” in Faden & Powers’s twin-aim framework and undermines the fair-opportunity guarantees that Daniels says health institutions owe their citizens (Alarcón, 2003). Pursuing a multiyear WHO grant offers insulation from domestic austerity cycles and the resources needed to complete your ancestry-aligned dataset—turning a fragile pilot into a durable public good that advances both justice theories.",
   },
   {
     id: 7,
@@ -100,7 +101,8 @@ export const blocks: Block[] = [
     question:
       "Should you focus on securing local funding, or pursue global grants from institutions like the WHO?",
     pointers: [11, 12],
-    context: "TODO: Fill out and cite",
+    context:
+      "Local evidence shows that Latin American governments devote under 2 % of total health spending to psychiatric services, a shortfall rooted in stark regional wealth gaps, cultural stigma, and limited political will (CITE). Such precarious funding keeps mental-health systems below the “sufficiency threshold” in Faden & Powers’s twin-aim framework and undermines the fair-opportunity guarantees that Daniels says health institutions owe their citizens (Alarcón, 2003). Pursuing a multiyear WHO grant offers insulation from domestic austerity cycles and the resources needed to complete your ancestry-aligned dataset—turning a fragile pilot into a durable public good that advances both justice theories.",
   },
   {
     id: 9,
@@ -121,7 +123,8 @@ export const blocks: Block[] = [
     question:
       "Who should lead the research: the Brazilian early-career investigator or the Boston expert?",
     pointers: [13, 14],
-    context: "TODO: fill out",
+    context:
+      "A regional analysis of 123 research institutions across 14 Latin-American countries shows that participatory science-communication activities—workshops, co-design sessions, and community forums—flourish when projects are locally led, whereas foreign-led initiatives default to one-way outreach and attract far smaller audiences (Barba et al., 2019). Because Faden & Powers’s twin aims require both a sufficient level of benefit and the closing of unjust gaps, the study’s findings imply that elevating a community-rooted investigator better satisfies justice: robust, bidirectional communication empowers participants, improves data quality, and keeps knowledge in the public domain (Barba et al., 2019). Selecting a high-profile external PI may accelerate publications, but it risks replicating the communication deficiencies the study documents, thereby threatening both sufficiency and disparity-reduction goals.",
   },
   {
     id: 11,
@@ -142,7 +145,8 @@ export const blocks: Block[] = [
     question:
       "Who should lead the research: the Mexican early-career investigator or the Boston expert?",
     pointers: [15, 16],
-    context: "TODO: fill out",
+    context:
+      "A regional analysis of 123 research institutions across 14 Latin-American countries shows that participatory science-communication activities—workshops, co-design sessions, and community forums—flourish when projects are locally led, whereas foreign-led initiatives default to one-way outreach and attract far smaller audiences (Barba et al., 2019). Because Faden & Powers’s twin aims require both a sufficient level of benefit and the closing of unjust gaps, the study’s findings imply that elevating a community-rooted investigator better satisfies justice: robust, bidirectional communication empowers participants, improves data quality, and keeps knowledge in the public domain (Barba et al., 2019). Selecting a high-profile external PI may accelerate publications, but it risks replicating the communication deficiencies the study documents, thereby threatening both sufficiency and disparity-reduction goals.",
   },
   {
     id: 13,
@@ -163,7 +167,8 @@ export const blocks: Block[] = [
     question:
       "See how your decisions affected the trajectory and efficacy of this work group, and how it's affected Autism in Brazil.",
     pointers: [17],
-    context: "TODO: fill out",
+    context:
+      "In class we examined a five-step ladder of community engagement—Inform, Consult, Involve, Collaborate, and Co-Lead—that rises from simply providing balanced information (Inform) to gathering targeted feedback while still retaining control (Consult), then to working directly with stakeholders so their concerns continuously shape the study (Involve). The upper rungs hand over real power: Collaborate partners community members in every decision domain, and Co-Lead places final authority in their hands so they drive both strategy and implementation.",
   },
   {
     id: 15,
@@ -184,7 +189,8 @@ export const blocks: Block[] = [
     question:
       "See how your decisions affected the trajectory and efficacy of this work group, and how it's affected Bipolar Disorder research in Mexico.",
     pointers: [18],
-    context: "TODO: fill out",
+    context:
+      "In class we examined a five-step ladder of community engagement—Inform, Consult, Involve, Collaborate, and Co-Lead—that rises from simply providing balanced information (Inform) to gathering targeted feedback while still retaining control (Consult), then to working directly with stakeholders so their concerns continuously shape the study (Involve). The upper rungs hand over real power: Collaborate partners community members in every decision domain, and Co-Lead places final authority in their hands so they drive both strategy and implementation.",
   },
   {
     id: 17,
