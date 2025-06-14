@@ -43,7 +43,7 @@ export const Body = () => {
       <div className="h-[48px]" />
       <Content
         header="Reflection"
-        body="Building a scenario-driven game around the Latin American Genomics Consortium (LAGC) forced me to revisit assumptions I carried from Costa Rica. Living under the universal Caja Costarricense de Seguro Social, I mistook free access for equity and dismissed community engagement as a distraction from “real” science. Faden & Powers’s Twin-Aim theory—securing a sufficient level of well-being while shrinking unjust gaps—and Norman Daniels’s fair-equality-of-opportunity principle reveal how wrong that was (Daniels, 2008; Faden & Powers, 2013). My objective through the game is to showcase both justice frameworks, and why they’re pertinent, through an immersive experience."
+        body="Building a scenario-driven game around the Latin American Genomics Consortium (LAGC) forced me to revisit assumptions I carried from Costa Rica. Living under the universal Caja Costarricense de Seguro Social, I mistook free access for equity and dismissed community engagement as a distraction from “real” science. Faden & Powers's Twin-Aim theory—securing a sufficient level of well-being while shrinking unjust gaps—and Norman Daniels's fair-equality-of-opportunity principle reveal how wrong that was (Daniels, 2008; Faden & Powers, 2013). My objective through the game is to showcase both justice frameworks, and why they're pertinent, through an immersive experience."
         data-section="reflection"
       />
       <div className="h-[18px]" />

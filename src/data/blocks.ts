@@ -53,7 +53,7 @@ export const blocks: Block[] = [
     action_text: "Decide your data strategy",
     title: "The Data Dilemma",
     description:
-      "In Nuevo León, your team is ready to dive into the genetics of bipolar disorder. A major crossroads lies ahead: do you rely on existing genomic datasets—built mostly from U.S. and European populations—or begin the long process of creating a new dataset tailored to the Mexican population? Most psychiatric research has ignored the unique genetic and social landscapes of Latin America. You’ve just reviewed a study highlighting how this gap severely limits precision medicine across the region. Still, developing a localized dataset will take years and significant funding, while adapting current data could fast-track your findings.",
+      "In Nuevo León, your team is ready to dive into the genetics of bipolar disorder. A major crossroads lies ahead: do you rely on existing genomic datasets—built mostly from U.S. and European populations—or begin the long process of creating a new dataset tailored to the Mexican population? Most psychiatric research has ignored the unique genetic and social landscapes of Latin America. You've just reviewed a study highlighting how this gap severely limits precision medicine across the region. Still, developing a localized dataset will take years and significant funding, while adapting current data could fast-track your findings.",
     question:
       "Should your team adapt existing genomic data to fit Mexican populations, or invest in building a new dataset grounded in local diversity?",
     pointers: [7, 8],
@@ -65,7 +65,7 @@ export const blocks: Block[] = [
     action_text: "Reuse old data",
     title: "Shortcuts and Consequences",
     description:
-      "You choose to adapt existing genomic data from U.S. and European cohorts to the local population. Initially, your results look promising—models are producing publishable findings, and you’re making progress faster than expected. But problems begin to emerge. Community health workers notice inconsistencies between your predictions and clinical realities. Advocacy groups criticize the lack of representation. Trust with local stakeholders begins to erode. Precision medicine, once your promise, now feels like a misfit in practice. The shortcuts come at a cost.",
+      "You choose to adapt existing genomic data from U.S. and European cohorts to the local population. Initially, your results look promising—models are producing publishable findings, and you're making progress faster than expected. But problems begin to emerge. Community health workers notice inconsistencies between your predictions and clinical realities. Advocacy groups criticize the lack of representation. Trust with local stakeholders begins to erode. Precision medicine, once your promise, now feels like a misfit in practice. The shortcuts come at a cost.",
     question: "Backtrack to last decision and try the other option",
     pointers: [6],
     context: "",
@@ -75,7 +75,7 @@ export const blocks: Block[] = [
     action_text: "Build new genomic dataset",
     title: "Investing in the Future",
     description:
-      "You decide to build a new genomic dataset tailored to your local population. It’s a long and expensive road, and your first challenge is assembling a multidisciplinary team. You hire geneticists, data scientists, community liaisons, and ethicists from across Brazil to ensure the research reflects both scientific and social realities. Progress is slow, but trust grows. Early pilot studies show promise, and you’re setting the groundwork for more equitable psychiatric care. This is the right foundation—but the hard part is just beginning.",
+      "You decide to build a new genomic dataset tailored to your local population. It's a long and expensive road, and your first challenge is assembling a multidisciplinary team. You hire geneticists, data scientists, community liaisons, and ethicists from across Brazil to ensure the research reflects both scientific and social realities. Progress is slow, but trust grows. Early pilot studies show promise, and you're setting the groundwork for more equitable psychiatric care. This is the right foundation—but the hard part is just beginning.",
     question:
       "Should you focus on securing local funding, or pursue global grants from institutions like the WHO?",
     pointers: [9, 10],
@@ -117,7 +117,7 @@ export const blocks: Block[] = [
     action_text: "Apply for WHO funding",
     title: "A Global Lifeline",
     description:
-      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of an initiative to support inclusive mental health research in underserved regions. Through this, you gain access to an international network of experts, infrastructure support, and long-term visibility. Your project becomes a model for cross-border genomic collaboration, and local credibility grows as international legitimacy takes hold. Now, it’s time to scale. A key decision lies ahead: will you slowly involve the community, building trust and even hiring early study participants to co-lead the work, or will you bring in high-profile researchers from elite U.S. institutions to fast-track progress—risking community exclusion in the process? You’re now choosing between appointing a less experienced but community-rooted Brazilian investigator, or a highly credentialed PI from Boston.",
+      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of an initiative to support inclusive mental health research in underserved regions. Through this, you gain access to an international network of experts, infrastructure support, and long-term visibility. Your project becomes a model for cross-border genomic collaboration, and local credibility grows as international legitimacy takes hold. Now, it's time to scale. A key decision lies ahead: will you slowly involve the community, building trust and even hiring early study participants to co-lead the work, or will you bring in high-profile researchers from elite U.S. institutions to fast-track progress—risking community exclusion in the process? You're now choosing between appointing a less experienced but community-rooted Brazilian investigator, or a highly credentialed PI from Boston.",
     question:
       "Who should lead the research: the Brazilian early-career investigator or the Boston expert?",
     pointers: [13, 14],
@@ -138,7 +138,7 @@ export const blocks: Block[] = [
     action_text: "Apply for WHO funding",
     title: "A Global Lifeline",
     description:
-      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of a global push to strengthen mental health research in underrepresented regions. With it, you gain access to global partners, technical support, and a sustainable funding structure. Your project in Nuevo León becomes a regional model for ethical, collaborative psychiatric genomics. But the next step is just as critical: will you center the voices of those affected? You now face a key choice—move slowly to build trust by hiring and elevating someone from the local community, or bring in an experienced PI from Boston to lead and accelerate results? You’re now choosing between appointing a less experienced but community-rooted Mexican investigator, or a highly credentialed PI from Boston.",
+      "Congrats! You got a $3 million grant from the World Health Organization. The funding is part of a global push to strengthen mental health research in underrepresented regions. With it, you gain access to global partners, technical support, and a sustainable funding structure. Your project in Nuevo León becomes a regional model for ethical, collaborative psychiatric genomics. But the next step is just as critical: will you center the voices of those affected? You now face a key choice—move slowly to build trust by hiring and elevating someone from the local community, or bring in an experienced PI from Boston to lead and accelerate results? You're now choosing between appointing a less experienced but community-rooted Mexican investigator, or a highly credentialed PI from Boston.",
     question:
       "Who should lead the research: the Mexican early-career investigator or the Boston expert?",
     pointers: [15, 16],
@@ -161,7 +161,7 @@ export const blocks: Block[] = [
     description:
       "The Brazilian PI moves slowly and intentionally. She meets with families one-on-one, explaining how their data will directly benefit their communities. Her understanding of cultural nuance earns her trust. As the study grows, she not only involves the community—she empowers it. Participants are hired as research assistants. Local voices shape protocols. What began as a clinical study transforms into a shared mission for equity in mental health. This path takes longer, but its foundation is strong.",
     question:
-      "See how your decisions affected the trajectory and efficacy of this work group, and how it’s affected Autism in Brazil.",
+      "See how your decisions affected the trajectory and efficacy of this work group, and how it's affected Autism in Brazil.",
     pointers: [17],
     context: "TODO: fill out",
   },
@@ -180,9 +180,9 @@ export const blocks: Block[] = [
     action_text: "Choose the Mexican PI",
     title: "Community-Empowered Research",
     description:
-      "The Mexican PI begins slowly, meeting with families across Nuevo León to listen, learn, and build genuine trust. She explains how genetic data will be used and why the community’s voice matters. Her deep cultural understanding earns respect. Over time, she not only involves the community—she empowers it. Former participants become researchers, protocols are co-designed, and local ownership of the project grows. Though slower, this approach yields lasting impact and resilience.",
+      "The Mexican PI begins slowly, meeting with families across Nuevo León to listen, learn, and build genuine trust. She explains how genetic data will be used and why the community's voice matters. Her deep cultural understanding earns respect. Over time, she not only involves the community—she empowers it. Former participants become researchers, protocols are co-designed, and local ownership of the project grows. Though slower, this approach yields lasting impact and resilience.",
     question:
-      "See how your decisions affected the trajectory and efficacy of this work group, and how it’s affected Bipolar Disorder research in Mexico.",
+      "See how your decisions affected the trajectory and efficacy of this work group, and how it's affected Bipolar Disorder research in Mexico.",
     pointers: [18],
     context: "TODO: fill out",
   },
@@ -191,7 +191,7 @@ export const blocks: Block[] = [
     action_text: "Reflect on your impact",
     title: "A Model for Inclusive Genomics",
     description:
-      "After years of ethical decisions and strategic planning, your working group in São Paulo has transformed how psychiatric genomics is approached in Latin America. You chose to build a Brazil-specific dataset, acknowledging that existing models—built largely on European samples—fail to account for the genetic diversity and cultural context of Brazilian populations. This decision was rooted in evidence that psychiatric diagnoses are not universal, and vary significantly by region and population (Canino & Alegría, 2008). To fund this ambitious effort, you pursued a $3 million WHO grant, recognizing the value of multilateral accountability and global collaboration (Giusti-Rodríguez et al., 2025). You also empowered the local research ecosystem by appointing a Brazilian PI who understood community dynamics and built trust from the ground up—one home visit, one barbecue, one hire at a time. The result is not just a dataset, but a movement: one that involves and uplifts local communities while advancing science. Your work now informs new diagnostic models and personalized treatments for autism that reflect the lived realities of Brazil’s population, helping reshape care for future generations.",
+      "After years of ethical decisions and strategic planning, your working group in São Paulo has transformed how psychiatric genomics is approached in Latin America. You chose to build a Brazil-specific dataset, acknowledging that existing models—built largely on European samples—fail to account for the genetic diversity and cultural context of Brazilian populations. This decision was rooted in evidence that psychiatric diagnoses are not universal, and vary significantly by region and population (Canino & Alegría, 2008). To fund this ambitious effort, you pursued a $3 million WHO grant, recognizing the value of multilateral accountability and global collaboration (Giusti-Rodríguez et al., 2025). You also empowered the local research ecosystem by appointing a Brazilian PI who understood community dynamics and built trust from the ground up—one home visit, one barbecue, one hire at a time. The result is not just a dataset, but a movement: one that involves and uplifts local communities while advancing science. Your work now informs new diagnostic models and personalized treatments for autism that reflect the lived realities of Brazil's population, helping reshape care for future generations.",
     question:
       "Share this success story to inspire new models of inclusion in psychiatric genomics.",
     pointers: [],
