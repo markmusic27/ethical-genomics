@@ -7,6 +7,19 @@ import { GradientOut } from "~/components/GradientOut";
 import { Button } from "~/components/Button";
 
 export default function GameplayPage() {
+  useEffect(() => {
+    // Preload all game images
+    const preloadImages = () => {
+      const imageNumbers = Array.from({ length: 18 }, (_, i) => i + 1);
+      imageNumbers.forEach((num) => {
+        const img = new Image();
+        img.src = `/game/${num}-min.png`;
+      });
+    };
+
+    preloadImages();
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       <Corpus />
