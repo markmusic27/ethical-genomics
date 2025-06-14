@@ -1,6 +1,7 @@
 import { Text } from "./Text";
 import { Button } from "./Button";
 import { Content } from "./Content";
+import { AnnotatedBibliography } from "./AnnotatedBibliography";
 
 export const Body = () => {
   return (
@@ -132,11 +133,7 @@ export const Body = () => {
         serious justice can wear the playful clothes of design.
       </Text>
       <div className="h-[48px]" />
-      <Content
-        header="Annotated Bibliography"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        data-section="bibliography"
-      />
+      <AnnotatedBibliography />
       <div className="h-[256px]" />
     </div>
   );
