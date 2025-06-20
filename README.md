@@ -10,7 +10,7 @@
 
 The following is an interactive web application that explores the complex ethical decisions involved in conducting psychiatric genomics research in Latin America. This narrative-driven experience puts you in the role of a research team leader, making critical choices about methodology, funding, and community engagement that shape the trajectory of your work.
 
-![Demo of Ethics in Psychiatric Genomics](https://github.com/markmusic27/ethics_in_psychiatric_genomics_in_latam/blob/main/docs/@demo.png?raw=true)
+![Demo of Ethics in Psychiatric Genomics](https://github.com/markmusic27/ethical-genomics/blob/main/public/images/demo.png?raw=true)
 
 
 ## How the Experience Works
