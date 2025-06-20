@@ -1,29 +1,52 @@
-# Create T3 App
+<p align="center">
+  <h1 align="center"><b>Ethics in Psychiatric Genomics in Latin America</b></h1>
+  <p align="center">
+  ✶ An interactive narrative exploring research ethics and community engagement ✶
+    <br />
+    <a href="https://ethical-genomics.vercel.app/">Play Now »</a>
+    <br />
+  </p>
+</p>
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+The following is an interactive web application that explores the complex ethical decisions involved in conducting psychiatric genomics research in Latin America. This narrative-driven experience puts you in the role of a research team leader, making critical choices about methodology, funding, and community engagement that shape the trajectory of your work.
 
-## What's next? How do I make an app with this?
+![Demo of Ethics in Psychiatric Genomics](https://github.com/markmusic27/ethics_in_psychiatric_genomics_in_latam/blob/main/docs/demo.png?raw=true)
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## How the Experience Works
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+The application presents a branching narrative where each decision you make affects the outcome of your research project. The story follows this structure:
 
-## Learn More
+```math
+\text{Research Impact} = \text{Methodology Choice} \times \text{Funding Strategy} \times \text{Community Engagement}
+```
+<br>
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+Your choices determine whether your research advances scientific knowledge while respecting local communities, or whether it falls into common pitfalls of extractive research practices.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Key Decision Points
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- **Location Selection**: Choose between São Paulo, Brazil (autism research) or Nuevo León, Mexico (bipolar disorder research)
+- **Data Strategy**: Adapt existing genomic data or build new, inclusive datasets
+- **Funding Approach**: Pursue local funding or seek international grants
+- **Leadership**: Appoint local investigators or bring in external experts
 
-## How do I deploy this?
+## Technologies Used
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- **Next.js 15** - React framework for the web application
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Modern styling and responsive design
+- **React Markdown** - Dynamic content rendering
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Educational Context
+
+This application was developed for Stanford's **COLLEGE 117: Justice in Biotechnologies: Who Benefits and Who Is Left Behind** course. The course examines equity and justice in genomics, artificial intelligence, and neurotechnology from a global perspective, exploring how these biotechnologies reflect and may contribute to global inequities in healthcare outcomes.
+
+This interactive narrative specifically addresses the justice and equity challenges in psychiatric genomics research, demonstrating how research decisions can either perpetuate or challenge existing power dynamics in international collaborations. Through the branching storylines, users explore the complex ethical considerations involved in conducting genomic research in Latin America, including issues of data representation, community engagement, and funding disparities.
