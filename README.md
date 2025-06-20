@@ -15,14 +15,7 @@ The following is an interactive web application that explores the complex ethica
 
 ## How the Experience Works
 
-The application presents a branching narrative where each decision you make affects the outcome of your research project. The story follows this structure:
-
-```math
-\text{Research Impact} = \text{Methodology Choice} \times \text{Funding Strategy} \times \text{Community Engagement}
-```
-<br>
-
-Your choices determine whether your research advances scientific knowledge while respecting local communities, or whether it falls into common pitfalls of extractive research practices.
+The application presents a branching narrative where each decision you make affects the outcome of your research project. Your choices determine whether your research advances scientific knowledge while respecting local communities, or whether it falls into common pitfalls of extractive research practices.
 
 ## Key Decision Points
 
