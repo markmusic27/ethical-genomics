@@ -29,7 +29,6 @@ The application presents a branching narrative where each decision you make affe
 - **Next.js 15** - React framework for the web application
 - **TypeScript** - Type-safe development
 - **Tailwind CSS** - Modern styling and responsive design
-- **React Markdown** - Dynamic content rendering
 
 ## Getting Started
 
