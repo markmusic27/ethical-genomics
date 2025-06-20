@@ -4,7 +4,7 @@ import { type Metadata } from "next";
 import { Crimson_Pro, Crimson_Text, Inter } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "College 117 Final",
+  title: "Ethical Genomics",
   description: "Justice in Biotechnologies Final Project - Mark Music",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

@@ -40,7 +40,10 @@ export const Sidebar = () => {
       <div
         className="h-[48px] w-[48px] transform cursor-pointer rounded-full border border-[#C4C3BE] bg-cover bg-center transition-transform duration-300 hover:-rotate-15"
         style={{ backgroundImage: "url('images/pfp.png')" }}
-        onClick={scrollToTop}
+        onClick={() => {
+          window.location.href =
+            "https://github.com/markmusic27/ethical-genomics";
+        }}
       />
       <div className="h-[48px]" />
       <SidebarItem text="Reflection" onClick={scrollToReflection} />
